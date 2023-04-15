@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/soccer.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .jumbotron-custom {
+          background: url("/images/stadiumfirewoks.jpg");
+          width: 100%;
+          Height: 500px;
+          text-align: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center; 
+     }
+     .hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/stadiumfirewoks.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+      <!--NAV BAR-->
+  <div class="dropbar">
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container-fluid p-0 ">
+        <div class="row">
+          <div class="col-sm-8 col-md-8 py-4">
+            <h4 class="text-white">Contact Us</h4>
+            <p class="text-white"><small>
+              By Mail: Club Manager PO Box 1012 Simcoe, ON. N3Y 5B3<br>
+              By Email: Bev Suggett - clubmanager@simcoesoccer.ca <br> 
+              President: Brian Suggett - president@simcoesoccer.ca<br>
+
+              REFEREE COORDINATOR: Joe Estrela: joe.estrela@hotmail.com<br>
+              E TRANSFERS only: sdysc.treasurer@gmail.com    
+            </small>
+            </p>
+          </div>
+          <div class="col-sm-3 offset-md-1 py-3">
+            <h4 class="text-white">PAGES</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">About SDYSC</a></li>
+              <li><a href="#" class="text-white">Our Sponsors</a></li>
+              <li><a href="#" class="text-white">Latest News</a></li>
+              <li><a href="#" class="text-white">Players Page</a></li>
+              <li><a href="#" class="text-white">Coaches Page</a></li>
+              <li><a href="#" class="text-white">Officials Page</a></li>
+              <li><a href="#" class="text-white">Rules/Forms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+         <strong>Simcoe and District Youth Soccer Club&nbsp;</strong> 
+         <img src="images/ball.png" alt="soccer ball" width="22" height="22">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+    <!--Selector-->
+    <div class="selector width: 100% p-0 m-0;">
+          <button class="tablink" onclick="openCity('signUp', this, 'red')" id="defaultOpen"><h3 style="font-size: 1.5vw">REGISTRATION</h3></button>
+          <button class="tablink" onclick="openCity('todaysGames', this, 'green')"><h3 style="font-size: 1.5vw">TODAYS GAMES</h3></button>
+          <button class="tablink" onclick="openCity('teams', this, 'blue')"><h3 style="font-size: 1.5vw">PLAYERS &amp; TEAMS</h3></button>
+          <button class="tablink" onclick="openCity('refsCoaches', this, 'orange')"><h3 style="font-size: 1.5vw">OFFICIALS &amp; COACHES</h3></button>
+          <br><br>
+          <div id="signUp" class="tabcontent p-4 m-0">
+            <div class="alert alert-danger" style="border-radius: 10px" width="100%";>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <img src="images/kidsgraph.png"  style="border-radius: 10px" width="100%vw";>
+                    </div>
+                    <div class="col-sm-8">
+                  <h2 style="font-size: 5vw;">2023 SUMMER SEASON</h2>
+                  <p>Join</p>
+                  <h4 style="font-size: 2vw;">Hello this is nice to have her</h4>
+                  <hr>  <!-- Button to Open the Join Modal -->
+                  <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#join">
+                    <h3 style="font-size: 1.5vw;">CLICK HERE TO REGISTER</h3>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div id="todaysGames" class="tabcontent">
+          <h1>TODAYS GAMES</h1>
+          <p>Copy PowerUp database Schedule</p> 
+        </div>
+        <div id="teams" class="tabcontent">
+          <div class="row">
+            <div class="col">
+              <h1 style="font-size: 2vw;">LEARN THE BEAUTIFUL GAME</h1>
+              <hr>
+              <div class="row">
+                <div class="col"><img src="slides/a1.jpg" alt="no image" style="border-radius: 10px;"></div>
+                <div class="col"><p>Team info</p></div>
+              </div>
+            </div>
+            <div class="col">
+              <h1 style="font-size: 2vw;">WORKING TOGETHER</h1>
+              <hr>
+              <div class="row">
+                <div class="col"><img src="slides/a4.jpg" alt="no image" style="border-radius: 10px;"></div>
+                <div class="col"><p>Team info</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="refsCoaches" class="tabcontent"> 
+          <div class="row">
+            <hr>
+            <div class="col">
+              <h1 style="font-size: 2vw;">OFFICIALS</h1>
+              <div class="row">
+                <div class="col"><img src="images/kidref.png" alt="no image" style="border-radius: 10px;"></div>
+                <div class="col">
+                  <p>title</p>
+                  <div style="text-align:left p-3;">
+                  List of things
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="col">
+            <h1 style="font-size: 2vw;">COACHES</h1>
+            <div class="row">
+              <div class="col"><img src="images/kidcoach.png" alt="no image" style="border-radius: 10px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+      <!--end of selector-->
+ <!-- The REG Modal -->
+ <div class="modal fade" id="join">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">WE PLAY IN SIMCOE ONTARIO</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col"><img src="images/simcoe.png"></div>
+        <div class="col">
+            <h4>Our teams play here</h4>
+            <p>hello we have soccer fields on the west side of Simcoe Ontario in Haldemand County.
+              <p>You can refisgter at our PowerUP sport page to join our club and be a team member</p>
+              <button type="button" class="btn-primary btn-sm">GO TO POWERUP</button>
+            </p></div>
+          </div>
+        </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Close Window</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--jumbotron-->
+
+       <div class="container-fluid jumbotron-custom">
+        <div class="mt-o pt-5 align-items-center text-white rounded">
+          <div><br><br><br></br><br></div>
+          <h1 class="display-1">50 YEAR CELEBRATION</h1>
+          <h1>This is where we talk about how</h1>
+          <h1>we are so great</h1>
+          <br>
+          <br>
+        </div>
+       </div>  
+    <section class="py-5 text-center container">
+        <div class="row py-lg-6">
+          <div class="col-lg-6 col-md-9 mx-auto">
+            <h1 class="fw-light">WE ARE SDYSC</h1>
+            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+            <p>
+              <a href="#" class="btn btn-secondary my-2">special link to somewhere</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Registration for 2023</button>
+             
+                <div class="row">
+                  <div class="col-md-6"><img src="slides/a2.jpg"></div>
+                <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               </div>
+                <a href="https://simcoesoccer.powerupsports.com/index.php?page=LOGIN" class="btn btn-primary my-2">GO TO POWER UP TO REGISTER</a>
+              </div>
+  
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--carosel of sponsors-->
+    <div class="containter-fluid m-5" style="border: 1px solid red;">
+      <div class="row p-5">
+        <div class="col"> 
+          <div style="text-align: center p-51; width: 100%;">
+          <div id="demo" class="carousel slide-fade" data-bs-ride="carousel">
+             <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <img src="sponsors/2012-Simcoe-Sponsor-binder_Page_23.jpg" alt="first" class="d-block" style="width:100%">
+               </div>
+               <div class="carousel-item">
+                 <img src="sponsors/2012-Simcoe-Sponsor-binder_Page_29.jpg" alt="second" class="d-block" style="width:100%">
+               </div>
+               <div class="carousel-item">
+                 <img src="/sponsors/lions.jpg" alt="four" class="d-block" style="width:100%">
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="col">
+          <div style="text-align: center p-5; width: 105%;">
+            <div id="demo" class="carousel slide-fade" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img src="sponsors/NACL-Logo-768x742.jpg" alt="first" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="sponsors/2012-Simcoe-Sponsor-binder_Page_29.jpg" alt="second" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="/sponsors/Home-Building-Centre-1.png" alt="three" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="/sponsors/lions.jpg" alt="four" class="d-block" style="width:100%">
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+        <div class="col">
+          <div style="text-align: center p-5; width: 105%;">
+            <div id="demo" class="carousel slide-fade" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                 <div class="carousel-item">
+                   <img src="sponsors/2012-Simcoe-Sponsor-binder_Page_29.jpg" alt="second" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="sponsors/eriebeach.png" alt="three" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="/sponsors/lions.jpg" alt="four" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item active">
+                  <img src="sponsors/lions.jpg" alt="first" class="d-block" style="width:100%">
+                </div>
+               </div>
+             </div>
+           </div>
+        </div>
+        <div class="col">
+          <div style="text-align: center p-5; width: 105%;">
+            <div id="demo" class="carousel slide-fade" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img src="sponsors/Eastlink_Logo4.jpg" alt="first" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="sponsors/2012-Simcoe-Sponsor-binder_Page_29.jpg" alt="second" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="/sponsors/2012-Simcoe-Sponsor-binder_Page_42.jpg" alt="three" class="d-block" style="width:100%">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="/sponsors/lions.jpg" alt="four" class="d-block" style="width:100%">
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+<div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Latest News1</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Latest News2</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">LatestNews3</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">RULES AND FORMS</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+      <h2>Footer</h2>
+    </div>
+   
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      function openCity(cityName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(cityName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+  </body>
+</html>
