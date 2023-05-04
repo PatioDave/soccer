@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/seletion.css" rel="stylesheet">
+    <link href="css/info.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Information</title></head>
+    <style>
+    </style>
+    <body>
+      <div id="navbar" style="z-index: 3;">
+        <a href="/index.html"><img fluid src="images/ball.png" style="width: 50%" alt="Ball"></a>
+        <a href="/news.html">News</a>
+        <a href="/players.html">Players</a>
+        <a href="/parents.html">Parents</a>
+        <a href="/coaches.html">Coaches</a>
+        <a href="/officials.html">Officials</a>
+        <a href="/info.html">Info</a>
+        <a href="#footer">Contact Us</a>
+      </div>
+  <!--topblurb-->
+  <div style="text-align: center; margin-top: 0%;">
+    <img src="images/info.jpg" style="width: 100%;">
+    <br>
+    <div class="wrapper px-3">
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;"></div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>Important Docs</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height:200px; background-image: url(images/kidsrunning.jpg);">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+</body>
+</html>
